@@ -22,5 +22,19 @@ public class CalendarioBasico
         month = 01;
         year = 01;
     }
-
+    
+    /**
+     * Añadir metodo de avanzar fecha
+     */
+    public void avanzarFecha () {
+        day = day + 1;
+        if ( day > 30 ) {
+            month = month + 1;
+            day = 01;
+        }
+        if ( month > 12 ) {
+            year = year + 1;
+            month = 01;
+        }
+    }
 }
