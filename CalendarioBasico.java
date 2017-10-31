@@ -46,4 +46,20 @@ public class CalendarioBasico
         month = month1;
         year = year1;
     }
+    
+    /**
+     * Devuelve en String la fecha puesta. Formato : dd/mm/aa.
+     */
+    public String fechaFinal () {
+        String dayNumDay = String.valueOf(day);
+        String dayNumMonth = String.valueOf(month);
+        String dayNumYear = String.valueOf(year);
+        if (dayNumDay.length() < 2) {
+            dayNumDay = "0" + String.valueOf(day);
+        }
+        if (dayNumMonth.length() < 2) {
+            dayNumMonth = "0" + String.valueOf (month);
+        }
+        return dayNumDay + "-" + dayNumMonth + "-" + dayNumYear.substring(2,4);
+    }
 }
