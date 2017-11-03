@@ -20,7 +20,7 @@ public class CalendarioBasico
         // initialise instance variables
         day = 01;
         month = 01;
-        year = 01;
+        year = 2001;
     }
     
     /**
@@ -41,7 +41,7 @@ public class CalendarioBasico
     /**
      * Fijar una fecha concreta
      */
-    public void ponerFecha (int day1, int month1, int year1) {
+    public void fijarFecha (int day1, int month1, int year1) {
         day = day1;
         month = month1;
         year = year1;
@@ -50,7 +50,7 @@ public class CalendarioBasico
     /**
      * Devuelve en String la fecha puesta. Formato : dd/mm/aa.
      */
-    public String fechaFinal () {
+    public String obtenerFecha () {
         String dayNumDay = String.valueOf(day);
         String dayNumMonth = String.valueOf(month);
         String dayNumYear = String.valueOf(year);
